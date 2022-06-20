@@ -4,7 +4,7 @@ import turtle
 
 def sql_start():
     global base, cur
-    base = sq.connect('mosoblcb.db')
+    base = sq.connect('program/sqlite.db')
     cur = base.cursor()
     if base:
         print('Подключение в БД успешно')
